@@ -1,0 +1,11 @@
+/node_modules
+/dist
+.env
+
+# lock file
+package-lock.json
+package-lock.lock
+yarn.lock
+
+# vscode
+/.vscode
