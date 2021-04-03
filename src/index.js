@@ -15,6 +15,14 @@ const { mongoose } = require('./helper')
 
 // reduce size file
 app.use(compression())
+app.use(
+    express.urlencoded({
+            extended: true
+        })
+)
+
+app.use(express.json());
+
 cors()
 
 app.use(Logger)
