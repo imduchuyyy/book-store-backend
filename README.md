@@ -11,3 +11,7 @@ npm install
 ```sh
 npm start
 ```
+
+## Todo
+1. Change url mongo
+2. Design models
