@@ -10,11 +10,14 @@ const compression = require('compression')
 const UserRoute = require('./routes/user')
 
 const { PORT } = require('./environments')
+const { Logger } = require("./middlewares")
 const { mongoose } = require('./helper')
 
 // reduce size file
 app.use(compression())
 cors()
+
+app.use(Logger)
 
 app.use('/user', UserRoute)
 
